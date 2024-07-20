@@ -33,3 +33,57 @@ doSomething(callback);
 //interview mostly asked queston -
 // what is anonymus function - 
 //a function without name that is called a function.
+
+
+//higher order function
+
+const radius = [1,2,3,4];
+
+const area = function(radiusArray) {
+    const result = [];
+    for(let i = 0; i < radiusArray.length; i++) {
+        const a = Math.PI * radiusArray[i] * radiusArray[i];
+        result.push(a);
+    }
+    return result;
+}
+
+const ans = area(radius);
+console.log(ans);
+
+const circumference = function(radiusArray) {
+    const result = [];
+    for(let i = 0; i < radiusArray.length; i++) {
+        const a = 2 * Math.PI * radiusArray[i];
+        result.push(a);
+    }
+    return result;
+}
+
+const ans2 = circumference(radius);
+console.log(ans2);
+
+
+//
+
+const formulaofArea = function(r) {
+    return Math.PI * r * r;
+}
+
+const formulaofCircumference = function(r){
+    return 2 * Math.PI * r;
+}
+
+const calculate = function(radiusArray, formula) {
+    const result = [];
+    for(let i = 0; i < radiusArray.length; i++) {
+        const a = formula(radiusArray[i]);
+        result.push(a);
+    }
+    return result;
+}
+
+const ans3 = calculate(radius, formulaofArea);
+const ans4 = calculate(radius, formulaofCircumference);
+console.log(ans3);
+console.log(ans4);
