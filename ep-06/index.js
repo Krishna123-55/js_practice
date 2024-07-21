@@ -10,5 +10,7 @@ for (let i = 0; i < arr.length; i++) {
 //map
 
 const newArr = arr.map(function(element){
-    console.log(element);
-});
+    return element * 2;
+})
+
+console.log(newArray);
