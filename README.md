@@ -11,11 +11,6 @@ You need to write the following commands on the terminal screen(in vscode) so th
 ```bash
   git clone "https://github.com/Krishna123-55/js_practice"
 ```
-Go to the project directory
-
-```bash
-  cd JS---Practice
-```
 
 ## ✨ Contributing
 If you find any `issues` with any code snippet or solutions, or if you have any suggestions for new exercises, feel free to open `an issue` or submit a `pull request`.
