@@ -23,11 +23,11 @@ console.log(array)
 // 3. Create an object that represents a person with properties like name, age, and gender. 
 const info = {
     name : "Krishna",
-    age : 20,
+    age : 22,
     gender : "male"
 }
 
 console.log(info)
 //update that age
-info.age = 21;
+info.age = 23;
 console.log(info)
